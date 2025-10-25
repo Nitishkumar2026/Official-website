@@ -37,7 +37,7 @@ const Services: React.FC = () => {
   const clientLogos = [
     { name: 'Google', url: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg' },
     { name: 'Microsoft', url: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg' },
-    { name: 'Amazon Web Services', url: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_logo.svg' },
+    { name: 'Amazon Web Services', url: 'https://i.postimg.cc/9f8MwX6r/Screenshot-2025-09-06-225159.jpg' },
     { name: 'Salesforce', url: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg' },
     { name: 'Intel', url: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg' },
     { name: 'IBM', url: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg' },

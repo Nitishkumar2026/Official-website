@@ -42,10 +42,13 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="https://i.postimg.cc/6QvbzNWH/logo.png" alt="YAT Logo" className="w-14 h-14 rounded-full" />
-               <div>
-                <div className="text-xl font-bold">Yubisaki</div>
-                <div className="text-base text-gray-400">Assistive Technology</div>
+              <div className="relative">
+                <img src="https://i.postimg.cc/6QvbzNWH/logo.png" alt="YAT Logo" className="w-14 h-14 rounded-full shadow-lg shadow-blue-500/10" />
+                <div className="absolute inset-0 rounded-full bg-blue-500 opacity-10 blur-sm"></div>
+              </div>
+              <div>
+                <div className="text-xl font-bold tracking-tight">Yubisaki</div>
+                <div className="text-base text-gray-400 font-medium">Assistive Technology</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

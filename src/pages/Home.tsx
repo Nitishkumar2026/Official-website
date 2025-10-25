@@ -43,8 +43,9 @@ const Home: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/80 to-blue-900/90"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -53,24 +54,32 @@ const Home: React.FC = () => {
               className="space-y-8"
             >
               <div className="space-y-4">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="inline-block px-4 py-1 bg-blue-100/20 backdrop-blur-sm rounded-full text-sm font-medium text-blue-100 mb-4 border border-blue-200/30"
+                >
+                  Trusted by 500+ organizations worldwide
+                </motion.div>
                 <motion.h1
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
                 >
-                  Innovating Smart
-                  <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">
-                    {' '}Software Solutions
+                  Empowering Lives Through
+                  <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent block mt-2">
+                    Assistive Technology
                   </span>
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="text-xl lg:text-2xl text-blue-100 leading-relaxed"
+                  className="text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-2xl"
                 >
-                  Transform your business with cutting-edge technology solutions backed by 40+ years of industry expertise.
+                  We create innovative solutions that enhance independence and improve quality of life, backed by 40+ years of expertise and a passion for meaningful impact.
                 </motion.p>
               </div>
 
@@ -81,15 +90,15 @@ const Home: React.FC = () => {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link to="/products" className="flex items-center justify-center space-x-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors duration-200">
-                    <span>Explore Products</span>
+                  <Link to="/products" className="flex items-center justify-center space-x-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg shadow-blue-900/20">
+                    <span>Explore Solutions</span>
                     <ArrowRight size={20} />
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link to="/contact" className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200">
+                  <Link to="/contact" className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
                     <PlayCircle size={20} />
-                    <span>Request Demo</span>
+                    <span>Schedule Consultation</span>
                   </Link>
                 </motion.div>
               </motion.div>
